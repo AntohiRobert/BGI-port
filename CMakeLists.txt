@@ -4,8 +4,8 @@ project(SDL2test)
 set(CMAKE_CXX_STANDARD 11)
 
 #include_directories(include)
-add_subdirectory(sdl2)
-include_directories(sdl2/include)
+add_subdirectory(SDL-mirror)
+include_directories(SDL-mirror/include)
 
 add_executable(SDL2test main.cpp)
 
