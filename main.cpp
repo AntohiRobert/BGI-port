@@ -32,7 +32,15 @@ int example1()
         SDL_RenderPresent(renderer);
         //doesn't switch focus on MacOS?
         //SDL_RaiseWindow(screen);
-        SDL_Delay(3000);
+        bool isquit = false;
+        SDL_Event event;
+        while (!isquit) {
+            if (SDL_PollEvent( & event)) {
+                if (event.type == SDL_QUIT) {
+                    isquit = true;
+                }
+            }
+        }
 
         SDL_DestroyWindow(screen);
         SDL_Quit();
@@ -61,7 +69,15 @@ int example2()
     screenSurface = SDL_GetWindowSurface(window);
     SDL_FillRect(screenSurface, NULL, SDL_MapRGB(screenSurface->format, 0xFF, 0xFF, 0xFF));
     SDL_UpdateWindowSurface(window);
-    SDL_Delay(2000);
+    bool isquit = false;
+    SDL_Event event;
+    while (!isquit) {
+        if (SDL_PollEvent( & event)) {
+            if (event.type == SDL_QUIT) {
+                isquit = true;
+            }
+        }
+    }
     SDL_DestroyWindow(window);
     SDL_Quit();
     return 0;
