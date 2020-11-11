@@ -15,8 +15,8 @@ int example1()
         SDL_Window *screen = SDL_CreateWindow("My application",
                                               SDL_WINDOWPOS_UNDEFINED,
                                               SDL_WINDOWPOS_UNDEFINED,
-                                              640, 480,
-                                              0);
+                                              SCREEN_WIDTH, SCREEN_HEIGHT,
+                                              SDL_WINDOW_SHOWN);
         if(!screen) {
             fprintf(stderr, "Could not create window\n");
             return 1;
@@ -30,6 +30,8 @@ int example1()
         SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
         SDL_RenderClear(renderer);
         SDL_RenderPresent(renderer);
+        //doesn't switch focus on MacOS?
+        //SDL_RaiseWindow(screen);
         SDL_Delay(3000);
 
         SDL_DestroyWindow(screen);
