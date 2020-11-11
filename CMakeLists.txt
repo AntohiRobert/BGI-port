@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.17)
-project(SDL2test)
+project(sdl-static)
 
 set(CMAKE_CXX_STANDARD 11)
 
@@ -7,6 +7,6 @@ set(CMAKE_CXX_STANDARD 11)
 add_subdirectory(SDL-mirror)
 include_directories(SDL-mirror/include)
 
-add_executable(SDL2test main.cpp)
+add_executable(sdl-static main.cpp)
 
-target_link_libraries(SDL2test SDL2main SDL2-static)
+target_link_libraries(sdl-static SDL2main SDL2-static)
