@@ -1,3 +1,4 @@
 [submodule "SDL-mirror"]
 	path = SDL-mirror
-	url = https://github.com/AntohiRobert/SDL-mirror
+	url = https://github.com/spurious/SDL-mirror
+	branch = release-2.0.12
