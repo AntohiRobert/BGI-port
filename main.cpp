@@ -30,8 +30,6 @@ int example1()
         SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
         SDL_RenderClear(renderer);
         SDL_RenderPresent(renderer);
-        //doesn't switch focus on MacOS?
-        //SDL_RaiseWindow(screen);
         bool isquit = false;
         SDL_Event event;
         while (!isquit) {
