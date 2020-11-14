@@ -2,3 +2,6 @@
 	path = SDL-mirror
 	url = https://github.com/spurious/SDL-mirror
 	branch = release-2.0.12
+[submodule "sdl-bgi"]
+	path = sdl-bgi
+	url = https://github.com/genpfault/sdl-bgi
