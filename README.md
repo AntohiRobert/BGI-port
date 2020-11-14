@@ -10,6 +10,9 @@ Tested on:
 Usage options:
 * git clone --recursive https://github.com/AntohiRobert/BGI-port and build with cmake
 * In CLion, Get from Version control, cmake is default build tool in CLion
+
+To add more source files, simply create .cpp file and add_executable(together with target_link_libraries)
+in the CMakeLists.txt file.
  
 Submodule sdl-bgi mirror isn't used at all, just copied sources to src, left sdl-bgi for documentation.  
 To update sdl-bgi:
