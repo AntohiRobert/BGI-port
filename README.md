@@ -7,6 +7,10 @@ Tested on:
  * MacOS Big Sur, CLion 2020.2.4
  * ArchLinux, CLion 2020.2.4
  
+Usage options:
+* git clone --recursive https://github.com/AntohiRobert/BGI-port and build with cmake
+* In CLion, Get from Version control, cmake is default build tool in CLion
+ 
 Submodule sdl-bgi mirror isn't used at all, just copied sources to src, left sdl-bgi for documentation.  
 To update sdl-bgi:
 * Download new sdl-bgi release(source!!) either from a Github Mirror or http://libxbgi.sourceforge.net/
