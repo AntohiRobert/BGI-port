@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.17)
-project(sdl-static)
+project(BGI-port)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -15,8 +15,8 @@ include_directories(src)
 add_library(sdl-bgi STATIC ${SOURCES})
 target_link_libraries(sdl-bgi sdl)
 
-add_executable(sdl-static main.cpp)
+add_executable(${PROJECT_NAME} main.cpp)
 
-target_link_libraries(sdl-static sdl-bgi sdl)
+target_link_libraries(${PROJECT_NAME} sdl-bgi sdl)
 
 #target_link_libraries(sdl-static SDL2main SDL2-static)
